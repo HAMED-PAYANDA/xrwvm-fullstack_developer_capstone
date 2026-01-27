@@ -131,7 +131,7 @@ Workflow file:
 
 
 
-## 📁 Repository Structure
+## 📁 Repository Structure (Code View)
 
 ```text
 xrwvm-fullstack_developer_capstone/
@@ -146,6 +146,10 @@ xrwvm-fullstack_developer_capstone/
 │   ├── Dockerfile
 │   ├── entrypoint.sh
 │   └── deployment.yaml
+├── .flake8
+├── .gitignore
+├── deploymentURL.txt
+├── LICENSE
 └── README.md
 
 ```

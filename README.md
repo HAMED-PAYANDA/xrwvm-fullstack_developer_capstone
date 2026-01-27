@@ -1,3 +1,34 @@
+<!-- CI / CD -->
+[![CI/CD Pipeline](https://github.com/HAMED-PAYANDA/xrwvm-fullstack_developer_capstone/actions/workflows/main.yml/badge.svg)](https://github.com/HAMED-PAYANDA/xrwvm-fullstack_developer_capstone/actions/workflows/main.yml)
+
+<!-- Docker -->
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
+![Docker Build](https://img.shields.io/badge/Docker%20Build-Passing-brightgreen)
+
+<!-- Kubernetes -->
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Deployed-blueviolet?logo=kubernetes)
+![IBM Cloud](https://img.shields.io/badge/IBM%20Cloud-Kubernetes-blue?logo=ibm)
+
+<!-- Backend -->
+![Django](https://img.shields.io/badge/Django-5.x-darkgreen?logo=django)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+
+<!-- Frontend -->
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES8-yellow?logo=javascript)
+
+<!-- Database -->
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
+![SQLite](https://img.shields.io/badge/SQLite-Auth%20DB-lightgrey?logo=sqlite)
+
+<!-- DevOps -->
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-black?logo=githubactions)
+![Container Registry](https://img.shields.io/badge/IBM%20Container%20Registry-Active-blue)
+
+<!-- Course / Capstone -->
+![IBM](https://img.shields.io/badge/IBM-Full--Stack%20Capstone-blue?logo=ibm)
+![Skills Network](https://img.shields.io/badge/Skills%20Network-Certified-success)
+
 # fullstack_developer_capstone
 ## Overview
 

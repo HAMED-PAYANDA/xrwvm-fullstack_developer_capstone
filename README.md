@@ -9,6 +9,15 @@ The complete implementation of a microservices-oriented web application, featuri
 [![Docker](https://img.shields.io/badge/Docker-Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](#)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](#)
+<!-- Database -->
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
+![SQLite](https://img.shields.io/badge/SQLite-Auth%20DB-lightgrey?logo=sqlite)
+<!-- DevOps -->
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-black?logo=githubactions)
+![Container Registry](https://img.shields.io/badge/IBM%20Container%20Registry-Active-blue)
+<!-- Course / Capstone -->
+![IBM](https://img.shields.io/badge/IBM-Full--Stack%20Capstone-blue?logo=ibm)
+![Skills Network](https://img.shields.io/badge/Skills%20Network-Certified-success)
 
 </div>
 

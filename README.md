@@ -1,187 +1,95 @@
-<!-- CI / CD -->
-[![CI/CD Pipeline](https://github.com/HAMED-PAYANDA/xrwvm-fullstack_developer_capstone/actions/workflows/main.yml/badge.svg)](https://github.com/HAMED-PAYANDA/xrwvm-fullstack_developer_capstone/actions/workflows/main.yml)
+<div align="center">
 
-<!-- Docker -->
-![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker)
-![Docker Build](https://img.shields.io/badge/Docker%20Build-Passing-brightgreen)
+# 🚀 Full-Stack Dealership Review Web Application
 
-<!-- Kubernetes -->
-![Kubernetes](https://img.shields.io/badge/Kubernetes-Deployed-blueviolet?logo=kubernetes)
-![IBM Cloud](https://img.shields.io/badge/IBM%20Cloud-Kubernetes-blue?logo=ibm)
+The complete implementation of a microservices-oriented web application, featuring React, Django, MongoDB, and deployed via Kubernetes with automated CI/CD pipelines.
 
-<!-- Backend -->
-![Django](https://img.shields.io/badge/Django-5.x-darkgreen?logo=django)
-![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+[![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#)
+[![Django](https://img.shields.io/badge/Django-Backend-092E20?style=for-the-badge&logo=django&logoColor=white)](#)
+[![Docker](https://img.shields.io/badge/Docker-Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](#)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](#)
 
-<!-- Frontend -->
-![React](https://img.shields.io/badge/React-18-blue?logo=react)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES8-yellow?logo=javascript)
+</div>
 
-<!-- Database -->
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
-![SQLite](https://img.shields.io/badge/SQLite-Auth%20DB-lightgrey?logo=sqlite)
+---
 
-<!-- DevOps -->
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-black?logo=githubactions)
-![Container Registry](https://img.shields.io/badge/IBM%20Container%20Registry-Active-blue)
+## 📌 Project Overview
 
-<!-- Course / Capstone -->
-![IBM](https://img.shields.io/badge/IBM-Full--Stack%20Capstone-blue?logo=ibm)
-![Skills Network](https://img.shields.io/badge/Skills%20Network-Certified-success)
+This repository contains the complete implementation of a full-stack dealership review web application, developed as the final capstone project for the **IBM Full-Stack Software Developer Professional Certificate**. 
 
-# fullstack_developer_capstone
-## Overview
+The project is a showcase of end-to-end software engineering practices. It goes beyond simple web development by integrating a robust REST API backend, a dynamic frontend, dual-database management, continuous integration workflows, and cloud-native Kubernetes deployment.
 
-This repository contains the complete implementation of a full-stack dealership review web application, developed as the final capstone project of the IBM Full-Stack Software Developer Professional Certificate.
+---
 
-The project demonstrates end-to-end software engineering practices, including frontend development, backend APIs, database integration, CI/CD automation, containerization, and Kubernetes deployment in a cloud environment.
+## 🧱 Microservices Architecture
 
-⸻
-
-## 🧱 Architecture
-
-The application follows a microservices-oriented, full-stack architecture:
-Frontend (React)
-        ↓
-Django Backend (REST APIs)
-        ↓
-MongoDB + SQLite
-        ↓
-External Sentiment Analysis Service
-
-Key Components
-	•	Frontend: React (SPA)
-	•	Backend: Django (REST APIs)
-	•	Database:
-	•	MongoDB (dealerships & reviews)
-	•	SQLite (authentication)
-	•	CI/CD: GitHub Actions (Python + JavaScript linting)
-	•	Containerization: Docker
-	•	Orchestration: Kubernetes
-	•	Cloud Registry: IBM Cloud Container Registry
-	•	Deployment: IBM Skills Network Kubernetes Cluster
-
-⸻
-
-## ✨ Features
-	•	🔐 User authentication (login, logout, registration)
-	•	🚘 View dealerships by state
-	•	📝 Add and view reviews for dealerships
-	•	😊 Automatic sentiment analysis for reviews
-	•	📦 Fully containerized backend
-	•	🚀 Deployed on Kubernetes
-	•	🔁 Continuous Integration with GitHub Actions
-
-⸻
-
-## 🔧 Technologies Used
-
-Frontend
-	•	React
-	•	JavaScript (ES6+)
-	•	HTML5 / CSS3
-
-Backend
-	•	Django
-	•	Django REST Framework
-	•	Python 3.12
-
-Databases
-	•	MongoDB
-	•	SQLite
-
-DevOps & Cloud
-	•	Docker
-	•	Kubernetes
-	•	GitHub Actions
-	•	IBM Cloud Container Registry
-	•	IBM Skills Network Labs
-
-⸻
-
-## 🔄 CI/CD Pipeline
-
-The repository includes a GitHub Actions workflow that automatically:
-	•	Runs on push and pull_request to main
-	•	Lints Python code using Flake8
-	•	Lints JavaScript code using JSHint
-	•	Prevents non-compliant code from being merged
-
-Workflow file:
-.github/workflows/main.yml
-
-🐳 Containerization
-	•	Backend containerized using Docker
-	•	Custom Dockerfile with:
-	•	Python base image
-	•	Dependency installation
-	•	Entry point for migrations and static files
-	•	Image built and pushed to IBM Cloud Container Registry
-
-⸻
-
-## ☸️ Kubernetes Deployment
-	•	Application deployed using a Kubernetes Deployment
-	•	Port forwarding used for access in lab environment
-	•	Deployment manifest:
-  server/deployment.yaml
-
-  The deployment URL is provided in:
-  deploymentURL.txt
-
-
-
-## 📁 Repository Structure (Code View)
+The application is structured around a decoupled, microservices-oriented architecture:
 
 ```text
-xrwvm-fullstack_developer_capstone/
-├── .github/
-│   └── workflows/
-│       └── main.yml
-├── server/
-│   ├── djangoapp/
-│   ├── djangoproj/
-│   ├── database/
-│   ├── frontend/
-│   ├── Dockerfile
-│   ├── entrypoint.sh
-│   └── deployment.yaml
-├── .flake8
-├── .gitignore
-├── deploymentURL.txt
-├── LICENSE
-└── README.md
-
+┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+│  React Frontend │ ────> │  Django Backend │ ────> │ Ext. Sentiment  │
+│      (SPA)      │ <──── │   (REST APIs)   │ <──── │ Analysis Engine │
+└─────────────────┘       └────────┬────────┘       └─────────────────┘
+                                   │
+                                   ▼
+                          ┌─────────────────┐
+                          │ MongoDB & SQLite│
+                          │   (Databases)   │
+                          └─────────────────┘
 ```
 
+✨ Key Features
+•	🔐 Secure User Authentication: Complete login, logout, and registration workflows managed via SQLite.
+•	🚘 Dealership Locator: Browse and filter nationwide dealerships by state.
+•	📝 Dynamic Review System: Users can add, read, and manage reviews for specific dealerships.
+•	😊 AI Sentiment Analysis: Automatic parsing of user reviews to determine positive, neutral, or negative sentiment.
+•	📦 Fully Containerized: Backend services packaged using custom Dockerfiles.
+•	🚀 Cloud-Native Deployment: Hosted and orchestrated using IBM Skills Network Kubernetes Clusters.
 
-## 🎓 Learning Outcomes
 
-This capstone demonstrates proficiency in:
+## 🛠️ Core Tech Stack
 
-	•	Full-stack web development
-  
-	•	RESTful API design
-  
-	•	Frontend-backend integration
+| Category | Technologies Used | Purpose |
+| :--- | :--- | :--- |
+| **Frontend UI** | React, JavaScript (ES6+), HTML5/CSS3 | Single Page Application (SPA) client interface |
+| **Backend API** | Django, Django REST Framework, Python 3.12 | RESTful routing, backend logic, and API endpoints |
+| **Databases** | MongoDB, SQLite | Document store for reviews; Relational DB for auth |
+| **DevOps & Cloud** | Docker, Kubernetes, GitHub Actions, IBM Cloud | Containerization, orchestration, and CI/CD automation |
 
-	•	CI/CD best practices
-  
-	•	Docker & Kubernetes
-  
-	•	Cloud-native application deployment
+🔄 CI/CD Pipeline & DevOps
+This repository enforces strict code quality and automated deployment pipelines:
+•	Continuous Integration: A GitHub Actions workflow (.github/workflows/main.yml) runs automatically on push and pull_request to the main branch.
+•	Automated Linting: Python code is checked via Flake8, and JavaScript code is verified via JSHint, preventing non-compliant code from being merged.
+•	Container Registry: The backend environment is packaged into a Docker image, containing a custom entry point for database migrations and static files, which is then pushed to the IBM Cloud Container Registry.
+•	Kubernetes Orchestration: The application is deployed using declarative Kubernetes manifests (server/deployment.yaml) with port-forwarding configured for lab access.
 
-⸻
-
-## 👤 Author
-
+📁 Repository Structure
+```text
+xrwvm-fullstack_developer_capstone/
+├── .github/workflows/
+│   └── main.yml               # CI/CD automated linting pipeline
+├── server/
+│   ├── djangoapp/             # Core Django application logic
+│   ├── djangoproj/            # Django project settings and routing
+│   ├── database/              # DB connection configurations
+│   ├── frontend/              # React application source code
+│   ├── Dockerfile             # Container blueprint
+│   ├── entrypoint.sh          # Container startup script
+│   └── deployment.yaml        # Kubernetes deployment manifest
+├── .flake8                    # Python linting rules
+├── deploymentURL.txt          # Live K8s deployment access link
+└── README.md                  # Project documentation
+```
+🎓 Learning Outcomes
+This capstone acts as a comprehensive proof of proficiency in:
+•	Full-stack web application development
+•	RESTful API design and Frontend-backend integration
+•	CI/CD best practices and automated testing
+•	Docker containerization and Kubernetes orchestration
+•	Cloud-native deployment methodologies
+👤 Author
 Hamed Payanda
-
-Capstone Project — IBM Software Developer Professional.
-
-⸻
-
-## 📜 License
-
-This project is submitted for educational purposes as part of the IBM Full-Stack Software Developer Professional Curriculum.
+•	GitHub: @HAMED-PAYANDA
+📜 License: This project is submitted for educational purposes as the Capstone Project for the IBM Full-Stack Software Developer Professional Curriculum.
 

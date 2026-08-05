@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Full-Stack Dealership Review Web Application
+#  Full-Stack Dealership Review Web Application
 
 The complete implementation of a microservices-oriented web application, featuring React, Django, MongoDB, and deployed via Kubernetes with automated CI/CD pipelines.
 

@@ -86,27 +86,21 @@ This repository enforces strict code quality and automated deployment pipelines:
 
 •	Merge Protection: Blocks pull requests and prevents non-compliant code from being merged if automated continuous integration checks fail.
 
-Workflow file:
-.github/workflows/main.yml
 
-🐳 Containerization
-	•	Backend containerized using Docker
-	•	Custom Dockerfile with:
-	•	Python base image
-	•	Dependency installation
-	•	Entry point for migrations and static files
-	•	Image built and pushed to IBM Cloud Container Registry
 
-⸻
+## 🐳 Containerization
+```text
+•	Backend containerized using Docker.
+•	Custom Dockerfile featuring a Python base image, dependency installation, and an entry point for migrations and static files.
+•	Image built and pushed to the IBM Cloud Container Registry.
+```
 
 ## ☸️ Kubernetes Deployment
-	•	Application deployed using a Kubernetes Deployment
-	•	Port forwarding used for access in lab environment
-	•	Deployment manifest:
-  server/deployment.yaml
-
-  The deployment URL is provided in:
-  deploymentURL.txt
+```text
+•	Application deployed using a declarative Kubernetes Deployment manifest (server/deployment.yaml).
+•	Port forwarding used for access within the lab environment.
+•	The live deployment URL is provided in: deploymentURL.txt
+```
 
 
 📁 Repository Structure

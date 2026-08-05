@@ -24,7 +24,7 @@ The complete implementation of a microservices-oriented web application, featuri
 
 ## 📌 Project Overview
 
-This repository contains the complete implementation of a full-stack dealership review web application, developed as the final capstone project for the **IBM Full-Stack Software Developer Professional Certificate**. 
+This repository contains the complete implementation of a full-stack dealership review web application, developed as the final capstone project for the **IBM Full-Stack Software Developer Professional**. 
 
 The project is a showcase of end-to-end software engineering practices. It goes beyond simple web development by integrating a robust REST API backend, a dynamic frontend, dual-database management, continuous integration workflows, and cloud-native Kubernetes deployment.
 
@@ -73,11 +73,41 @@ The application is structured around a decoupled, microservices-oriented archite
 | **DevOps & Cloud** | Docker, Kubernetes, GitHub Actions, IBM Cloud | Containerization, orchestration, and CI/CD automation |
 
 🔄 CI/CD Pipeline & DevOps
+
 This repository enforces strict code quality and automated deployment pipelines:
+
 •	Continuous Integration: A GitHub Actions workflow (.github/workflows/main.yml) runs automatically on push and pull_request to the main branch.
+
 •	Automated Linting: Python code is checked via Flake8, and JavaScript code is verified via JSHint, preventing non-compliant code from being merged.
+
 •	Container Registry: The backend environment is packaged into a Docker image, containing a custom entry point for database migrations and static files, which is then pushed to the IBM Cloud Container Registry.
+
 •	Kubernetes Orchestration: The application is deployed using declarative Kubernetes manifests (server/deployment.yaml) with port-forwarding configured for lab access.
+
+•	Merge Protection: Blocks pull requests and prevents non-compliant code from being merged if automated continuous integration checks fail.
+
+Workflow file:
+.github/workflows/main.yml
+
+🐳 Containerization
+	•	Backend containerized using Docker
+	•	Custom Dockerfile with:
+	•	Python base image
+	•	Dependency installation
+	•	Entry point for migrations and static files
+	•	Image built and pushed to IBM Cloud Container Registry
+
+⸻
+
+## ☸️ Kubernetes Deployment
+	•	Application deployed using a Kubernetes Deployment
+	•	Port forwarding used for access in lab environment
+	•	Deployment manifest:
+  server/deployment.yaml
+
+  The deployment URL is provided in:
+  deploymentURL.txt
+
 
 📁 Repository Structure
 ```text

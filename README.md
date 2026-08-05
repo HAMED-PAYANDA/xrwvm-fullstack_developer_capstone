@@ -40,12 +40,19 @@ The application is structured around a decoupled, microservices-oriented archite
 ```
 
 ✨ Key Features
+
 •	🔐 Secure User Authentication: Complete login, logout, and registration workflows managed via SQLite.
+
 •	🚘 Dealership Locator: Browse and filter nationwide dealerships by state.
+
 •	📝 Dynamic Review System: Users can add, read, and manage reviews for specific dealerships.
+
 •	😊 AI Sentiment Analysis: Automatic parsing of user reviews to determine positive, neutral, or negative sentiment.
+
 •	📦 Fully Containerized: Backend services packaged using custom Dockerfiles.
+
 •	🚀 Cloud-Native Deployment: Hosted and orchestrated using IBM Skills Network Kubernetes Clusters.
+
 
 
 ## 🛠️ Core Tech Stack
@@ -82,12 +89,19 @@ xrwvm-fullstack_developer_capstone/
 └── README.md                  # Project documentation
 ```
 🎓 Learning Outcomes
+
 This capstone acts as a comprehensive proof of proficiency in:
+
 •	Full-stack web application development
+
 •	RESTful API design and Frontend-backend integration
+
 •	CI/CD best practices and automated testing
+
 •	Docker containerization and Kubernetes orchestration
+
 •	Cloud-native deployment methodologies
+
 👤 Author
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA

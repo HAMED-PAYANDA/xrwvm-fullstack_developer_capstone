@@ -13,7 +13,6 @@ The complete implementation of a microservices-oriented web application, featuri
 ![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
 ![SQLite](https://img.shields.io/badge/SQLite-Auth%20DB-lightgrey?logo=sqlite)
 <!-- DevOps -->
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-black?logo=githubactions)
 ![Container Registry](https://img.shields.io/badge/IBM%20Container%20Registry-Active-blue)
 <!-- Course / Capstone -->
 ![IBM](https://img.shields.io/badge/IBM-Full--Stack%20Capstone-blue?logo=ibm)

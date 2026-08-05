@@ -176,6 +176,8 @@ This capstone acts as a comprehensive proof of proficiency in:
 👤 Author
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
+Completed as part of the IBM Full-Stack Software Developer Professional.
+
 
 📜 License: This project is submitted for educational purposes as the Capstone Project for the IBM Full-Stack Software Developer Professional Curriculum.
 

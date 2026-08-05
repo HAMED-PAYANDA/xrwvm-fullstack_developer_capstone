@@ -126,6 +126,45 @@ xrwvm-fullstack_developer_capstone/
 ├── deploymentURL.txt          # Live K8s deployment access link
 └── README.md                  # Project documentation
 ```
+## ⚙️ Local Setup & Execution
+
+While this application is designed for cloud-native Kubernetes deployment, you can run the services locally for development and testing purposes.
+
+1. Clone the Repository
+```bash
+git clone [https://github.com/HAMED-PAYANDA/xrwvm-fullstack_developer_capstone.git](https://github.com/HAMED-PAYANDA/xrwvm-fullstack_developer_capstone.git)
+cd xrwvm-fullstack_developer_capstone
+```
+
+2. Backend Setup (Django)
+Open a terminal and navigate to the server directory to start the backend API:
+```text
+cd server
+python3 -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip install -r requirements.txt
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py runserver
+```
+
+3. Frontend Setup (React)
+Open a new terminal window, navigate to the frontend directory, and start the client interface:
+```text
+cd server/frontend
+npm install
+npm start
+```
+
+4. Running via Docker (Alternative)
+If you prefer to run the containerized backend using the included Dockerfile:
+```text
+cd server
+docker build -t dealership-backend .
+docker run -p 8000:8000 dealership-backend
+```
+
+
 🎓 Learning Outcomes
 
 This capstone acts as a comprehensive proof of proficiency in:
@@ -143,5 +182,6 @@ This capstone acts as a comprehensive proof of proficiency in:
 👤 Author
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
+
 📜 License: This project is submitted for educational purposes as the Capstone Project for the IBM Full-Stack Software Developer Professional Curriculum.
 

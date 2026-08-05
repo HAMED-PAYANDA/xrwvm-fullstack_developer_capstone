@@ -177,10 +177,11 @@ This capstone demonstrates proficiency in:
 
 Hamed Payanda
 
-Capstone Project — IBM Software Developer Professional Certificate
+Capstone Project — IBM Software Developer Professional.
 
 ⸻
 
 ## 📜 License
 
-This project is submitted for educational purposes as part of the IBM Full-Stack Software Developer Professional Certificate program.
+This project is submitted for educational purposes as part of the IBM Full-Stack Software Developer Professional Curriculum.
+

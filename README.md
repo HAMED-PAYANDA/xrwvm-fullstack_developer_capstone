@@ -3,20 +3,20 @@
 #  Full-Stack Dealership Review Web Application
 
 The complete implementation of a microservices-oriented web application, featuring React, Django, MongoDB, and deployed via Kubernetes with automated CI/CD pipelines.
-
 [![React](https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=black)](#)
 [![Django](https://img.shields.io/badge/Django-Backend-092E20?style=for-the-badge&logo=django&logoColor=white)](#)
 [![Docker](https://img.shields.io/badge/Docker-Container-2496ED?style=for-the-badge&logo=docker&logoColor=white)](#)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](#)
 [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](#)
-<!-- Database -->
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
-![SQLite](https://img.shields.io/badge/SQLite-Auth%20DB-lightgrey?logo=sqlite)
-<!-- DevOps -->
-![Container Registry](https://img.shields.io/badge/IBM%20Container%20Registry-Active-blue)
-<!-- Course / Capstone -->
-![IBM](https://img.shields.io/badge/IBM-Full--Stack%20Capstone-blue?logo=ibm)
-![Skills Network](https://img.shields.io/badge/Skills%20Network-Certified-success)
+<br>
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?style=for-the-badge&logo=mongodb)
+![SQLite](https://img.shields.io/badge/SQLite-Auth%20DB-lightgrey?style=for-the-badge&logo=sqlite)
+![Container Registry](https://img.shields.io/badge/IBM%20Container%20Registry-Active-blue?style=for-the-badge&logo=ibm&logoColor=white)
+<br>
+[![IBM Certification](https://img.shields.io/badge/IBM-Full%20Stack%20Software%20Developer%20Professional-blue?style=for-the-badge&logo=ibm)](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)
+![IBM](https://img.shields.io/badge/IBM-Full--Stack%20Capstone-blue?style=for-the-badge&logo=ibm)
+![Skills Network](https://img.shields.io/badge/Skills%20Network-Certified-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 </div>
 
@@ -45,6 +45,22 @@ The application is structured around a decoupled, microservices-oriented archite
                           │ MongoDB & SQLite│
                           │   (Databases)   │
                           └─────────────────┘
+```
+```mermaid
+graph LR
+    React(["⚛️ React Frontend (SPA)"])
+    Django["🐍 Django Backend (REST APIs)"]
+    Sentiment["🧠 Ext. Sentiment Analysis Engine"]
+    DB[("🗄️ MongoDB & SQLite (Databases)")]
+
+    React <-->|"HTTP Requests / JSON"| Django
+    Django <-->|"API Calls"| Sentiment
+    Django -->|"Query / Update Data"| DB
+
+    style React fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000
+    style Django fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#000
+    style Sentiment fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#000
+    style DB fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
 ```
 
 ✨ Key Features

@@ -200,7 +200,7 @@ This capstone acts as a comprehensive proof of proficiency in:
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ---
 

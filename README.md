@@ -63,8 +63,9 @@ graph LR
     style Sentiment fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#000
     style DB fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#000
 ```
+---
 
-✨ Key Features
+## ✨ Key Features
 
 •	🔐 Secure User Authentication: Complete login, logout, and registration workflows managed via SQLite.
 
@@ -78,7 +79,7 @@ graph LR
 
 •	🚀 Cloud-Native Deployment: Hosted and orchestrated using IBM Skills Network Kubernetes Clusters.
 
-
+---
 
 ## 🛠️ Core Tech Stack
 
@@ -89,7 +90,9 @@ graph LR
 | **Databases** | MongoDB, SQLite | Document store for reviews; Relational DB for auth |
 | **DevOps & Cloud** | Docker, Kubernetes, GitHub Actions, IBM Cloud | Containerization, orchestration, and CI/CD automation |
 
-🔄 CI/CD Pipeline & DevOps
+---
+
+## 🔄 CI/CD Pipeline & DevOps
 
 This repository enforces strict code quality and automated deployment pipelines:
 
@@ -103,7 +106,7 @@ This repository enforces strict code quality and automated deployment pipelines:
 
 •	Merge Protection: Blocks pull requests and prevents non-compliant code from being merged if automated continuous integration checks fail.
 
-
+---
 
 ## 🐳 Containerization
 ```text
@@ -118,9 +121,9 @@ This repository enforces strict code quality and automated deployment pipelines:
 •	Port forwarding used for access within the lab environment.
 •	The live deployment URL is provided in: deploymentURL.txt
 ```
+---
 
-
-📁 Repository Structure
+## 📁 Repository Structure
 ```text
 xrwvm-fullstack_developer_capstone/
 ├── .github/workflows/
@@ -137,6 +140,8 @@ xrwvm-fullstack_developer_capstone/
 ├── deploymentURL.txt          # Live K8s deployment access link
 └── README.md                  # Project documentation
 ```
+---
+
 ## ⚙️ Local Setup & Execution
 
 While this application is designed for cloud-native Kubernetes deployment, you can run the services locally for development and testing purposes.
@@ -149,7 +154,7 @@ cd xrwvm-fullstack_developer_capstone
 
 2. Backend Setup (Django)
 Open a terminal and navigate to the server directory to start the backend API:
-```text
+```bash
 cd server
 python3 -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
@@ -161,7 +166,7 @@ python3 manage.py runserver
 
 3. Frontend Setup (React)
 Open a new terminal window, navigate to the frontend directory, and start the client interface:
-```text
+```bash
 cd server/frontend
 npm install
 npm start
@@ -169,14 +174,15 @@ npm start
 
 4. Running via Docker (Alternative)
 If you prefer to run the containerized backend using the included Dockerfile:
-```text
+```bash
 cd server
 docker build -t dealership-backend .
 docker run -p 8000:8000 dealership-backend
 ```
 
+---
 
-🎓 Learning Outcomes
+## 🎓 Learning Outcomes
 
 This capstone acts as a comprehensive proof of proficiency in:
 
@@ -190,11 +196,21 @@ This capstone acts as a comprehensive proof of proficiency in:
 
 •	Cloud-native deployment methodologies
 
-👤 Author
-Hamed Payanda
-•	GitHub: @HAMED-PAYANDA
-Completed as part of the IBM Full-Stack Software Developer Professional.
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+
+---
+
+## 👤 Author
+
+**Hamed Payanda**
+* **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
+* Completed as part of the **IBM Full-Stack Software Developer Professional**.
 
 
-📜 License: This project is submitted for educational purposes as the Capstone Project for the IBM Full-Stack Software Developer Professional Curriculum.
+
+
 

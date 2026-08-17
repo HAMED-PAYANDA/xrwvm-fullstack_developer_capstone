@@ -208,7 +208,7 @@ This project is licensed under the [Apache 2.0 License](LICENSE).
 
 **Hamed Payanda**
 * **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
-* Completed as part of the **IBM Full-Stack Software Developer Professional**.
+* Completed as part of the **IBM Full-Stack Software Developer Professional Capstone**.
 
 
 

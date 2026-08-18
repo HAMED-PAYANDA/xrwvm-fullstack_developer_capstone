@@ -155,21 +155,45 @@ The following screenshots validate the end-to-end implementation of the applicat
 ---
 
 ## 📁 Repository Structure
+
 ```text
 xrwvm-fullstack_developer_capstone/
 ├── .github/workflows/
-│   └── main.yml               # CI/CD automated linting pipeline
+│   └── main.yml                   # CI/CD automated linting pipeline
 ├── server/
-│   ├── djangoapp/             # Core Django application logic
-│   ├── djangoproj/            # Django project settings and routing
-│   ├── database/              # DB connection configurations
-│   ├── frontend/              # React application source code
-│   ├── Dockerfile             # Container blueprint
-│   ├── entrypoint.sh          # Container startup script
-│   └── deployment.yaml        # Kubernetes deployment manifest
-├── .flake8                    # Python linting rules
-├── deploymentURL.txt          # Live K8s deployment access link
-└── README.md                  # Project documentation
+│   ├── database/                  # Node.js/Express service for MongoDB integration
+│   │   ├── data/                  # Raw JSON dealership/review data
+│   │   ├── app.js                 # Express server configuration
+│   │   ├── *.js                   # Mongoose models (dealership.js, review.js, etc.)
+│   │   └── Dockerfile / docker-compose.yml
+│   ├── djangoapp/                 # Core Django application and API logic
+│   │   ├── microservices/         # External AI and sentiment engine integrations
+│   │   ├── models.py / views.py   # Django MVC architecture and backend rendering
+│   │   └── populate.py / restapis.py # Database seeding and API routing
+│   ├── djangoproj/                # Django project configurations
+│   │   └── settings.py / urls.py / wsgi.py / asgi.py
+│   ├── frontend/                  # React SPA client application
+│   │   ├── public/                # Static public assets (icons, manifest)
+│   │   ├── src/                   # React components (App.js, index.js)
+│   │   ├── static/                # HTML templates, stylesheets, and banner images
+│   │   └── package.json           # Frontend dependency tree
+│   ├── Dockerfile                 # Container blueprint for the backend
+│   ├── deployment.yaml            # Kubernetes deployment manifest
+│   ├── entrypoint.sh              # Container startup and database migration script
+│   ├── manage.py                  # Django CLI utility
+│   └── requirements.txt           # Python environment dependencies
+├── .flake8                        # Flake8 style and linting rules
+├── .gitignore                     # Git tracking exclusions
+├── deploymentURL.txt              # Live Kubernetes deployment access link
+├── LICENSE                        # Apache 2.0 License file
+├── README.md                      # Project documentation
+├── CI_CD.png                      # Visual proof: GitHub Actions Workflow
+├── about_us.png                   # Visual proof: About Us React component
+├── car_models.png                 # Visual proof: Django Admin relational ORM
+├── contact_us.png                 # Visual proof: Contact Us React component
+├── dealerships.png                # Visual proof: MongoDB JSON data payload
+├── deployed_loggedin.png          # Visual proof: Authenticated Cloud UI
+└── sentiment_analyzer.png         # Visual proof: External AI Sentiment Microservice
 ```
 ---
 

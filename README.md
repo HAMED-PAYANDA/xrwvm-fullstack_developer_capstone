@@ -129,7 +129,7 @@ The following screenshots validate the end-to-end implementation of the applicat
 
 **1. Automated CI/CD Pipeline**  
 *Demonstrates the GitHub Actions workflow successfully executing continuous integration checks. It highlights the automated static code analysis utilizing Flake8 (Python) and JSHint (JavaScript) prior to deployment.*
-![GitHub Actions CI/CD](CI:CD.png)
+![GitHub Actions CI/CD](CI_CD.png)
 
 **2. Django ORM & Relational Data Management**  
 *Highlights the Django Administration panel, proving the successful configuration of the SQLite relational database. It displays the ORM mapping and secure administrative control over the `CarModel` and `CarMake` entities.*

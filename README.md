@@ -123,6 +123,37 @@ This repository enforces strict code quality and automated deployment pipelines:
 ```
 ---
 
+## 📸 Visual Proof
+
+The following screenshots validate the end-to-end implementation of the application, from CI/CD automation to database management and microservice integration.
+
+**1. Automated CI/CD Pipeline**  
+*Demonstrates the GitHub Actions workflow successfully executing continuous integration checks. It highlights the automated static code analysis utilizing Flake8 (Python) and JSHint (JavaScript) prior to deployment.*
+![GitHub Actions CI/CD](CI:CD.png)
+
+**2. Django ORM & Relational Data Management**  
+*Highlights the Django Administration panel, proving the successful configuration of the SQLite relational database. It displays the ORM mapping and secure administrative control over the `CarModel` and `CarMake` entities.*
+![Django Admin Console](car_models.png)
+
+**3. MongoDB Document Retrieval**  
+*Displays a raw JSON payload confirming the successful execution of the Django backend REST API endpoints. It verifies the active connection to the MongoDB cluster and the successful retrieval of unstructured dealership documents.*
+![MongoDB JSON Payload](dealerships.png)
+
+**4. External AI Sentiment Microservice**  
+*Validates the independent cloud deployment of the sentiment analysis engine (hosted on IBM Cloud Code Engine). The microservice successfully accepts string parameters and returns a parsed JSON sentiment evaluation.*
+![Sentiment Analysis API](sentiment_analyzer.png)
+
+**5. React Frontend Architecture & Routing**  
+*Showcases the modular UI components (`AboutUs` and `ContactUs`) rendered by the React frontend. This proves successful client-side routing and the application of responsive, consistent CSS styling.*
+![About Us Component](about_us.png)  
+![Contact Us Component](contact_us.png)
+
+**6. Authenticated Cloud Deployment**  
+*The complete, cloud-hosted application interface accessed via the Kubernetes port-forwarded environment. It demonstrates successful React-to-Django API communication by maintaining a secure user session state (indicated by the active logout functionality).*
+![Deployed and Authenticated UI](deployed_loggedin.png)
+
+---
+
 ## 📁 Repository Structure
 ```text
 xrwvm-fullstack_developer_capstone/
